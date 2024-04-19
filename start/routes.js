@@ -25,3 +25,8 @@ Route.group(() => {
 Route.group(() => {
   Route.post('/', 'SaleController.store')
 }).prefix('sales').middleware(['auth'])
+
+
+Route.get('test', () => {
+  return { message: 'Test route is working!' }
+})
